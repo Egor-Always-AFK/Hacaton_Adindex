@@ -1,4 +1,6 @@
 ---
+import { findProfile } from "../../db/user_repo";
+
 export interface Name {
     firstName: string,
     secondName: string
@@ -6,6 +8,10 @@ export interface Name {
 
 export interface About {
     text: string
+}
+
+if (Astro.cookies.has("user")) {
+  // load profile
 }
 
 const { name } = Astro.props
