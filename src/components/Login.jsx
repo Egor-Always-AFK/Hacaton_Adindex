@@ -10,7 +10,7 @@ export default function Login() {
     }
 
     return (
-        <div className="hero min-h-full bg-base-100">
+        <div className="hero min-h-100% bg-base-100">
             <div className="hero-content flex-row lg:flex-col">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Траектория</h1>
@@ -43,7 +43,7 @@ export default function Login() {
                             <button className="btn btn-primary" onClick={login}>Войти</button>
                         </div>
                         <div>
-                            <a href="registration" className="label-text-alt link link-hover">Регистрация</a>
+                            <a href="/registration" className="label-text-alt link link-hover">Регистрация</a>
                         </div>
                     </div>
                 </div>

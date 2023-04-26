@@ -1,31 +1,17 @@
 ---
-import { findProfile } from "../db/user_repo";
-
-export interface Name {
-    firstName: string,
-    secondName: string
-}
-
-export interface About {
-    text: string
-}
-
-if (Astro.cookies.has("user")) {
-  // load profile
-}
-
-const { name } = Astro.props
-const { about } = Astro.props
+import "../global.css"
+import Layout from "../layouts/Layout.astro";
 ---
-
-<div class="hero min-h-screen bg-base-200">
+<Layout title="Профиль">
+  <div class="hero min-h-screen bg-base-200">
     <div class="hero-content flex-col lg:flex-row">
       <img src="" class="max-w-sm rounded-lg shadow-2xl" />
       <div>
-        <h1 class="text-5xl font-bold">{name.firstName} {name.secondName}</h1>
-        <p class="py-6">{about}</p>
-        <button class="btn btn-primary">Резюме</button>
+        <h1 class="text-5xl font-bold">Имя Пользователя</h1>
+        <p class="py-6">ап</p>
+        <button class="btn btn-primary">Посмотреть Резюме</button>
         <!-- achivments here -->
       </div>
     </div>
 </div>
+</Layout>
