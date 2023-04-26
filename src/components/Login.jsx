@@ -21,6 +21,7 @@ export default function Login() {
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-200">
                     <div className="card-body">
+                        <h1 className="text-5xl font-bold">Вход</h1>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Почта</span>
