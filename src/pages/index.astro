@@ -4,34 +4,14 @@ import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import Banner from '../components/landingpage/banner.astro';
+import Carousel from '../components/landingpage/idk_section.astro'
 ---
 
 <Layout title="Welcome to Astro.">
 	<Navbar count = {2}/>
 	<main>
 		<Banner />
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<Carousel />
 	</main>
 	<Footer />
 </Layout>
