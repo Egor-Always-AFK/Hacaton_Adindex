@@ -1,4 +1,8 @@
 export default function Registration() {
+    const register = () => {
+        console.log("register")
+    }
+
     return (
         <div className="hero min-h-100% bg-base-100">
             <div className="hero-content flex-row lg:flex-col">
@@ -55,7 +59,7 @@ export default function Registration() {
                             </div>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary" onClick={login}>Зарегистрироваться</button>
+                            <button className="btn btn-primary" onClick={register}>Зарегистрироваться</button>
                         </div>
                     </div>
                 </div>
