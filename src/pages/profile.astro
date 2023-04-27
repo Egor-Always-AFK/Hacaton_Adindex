@@ -20,7 +20,30 @@ import Layout from "../layouts/Layout.astro";
               <img src="../../res/javascript.svg" alt="javascript" height="50px" width="50px">
               <img src="../../res/docker.svg" alt="docker" height="50px" width="50px">
               </div>
-            </div>            
+            </div>
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+              <div class="collapse-title text-xl font-medium">
+                Образование
+              </div>
+              <div class="collapse-content">
+                <p>Среднее образование</p>
+                <d>*Школа_нейм*</d>
+                <p>Высшее образование</p>
+                <d>*ВУЗ_нейм*</d>
+              </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+              <div class="collapse-title text-xl font-medium">
+                Контактные данные
+              </div>
+              <div class="collapse-content">
+                <p>Телефон: *********</p>
+                <p>Почта: ****@*******</p>
+                <p>Telegram: @******</p>
+              </div>
+            </div>
+              </div>
+            </div>
             <div class="stats shadow">
               <div class="stat place-items-center">
                 <div class="stat-title">Рейтинг</div>
@@ -42,3 +65,9 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </div>
 </Layout>
+
+<style>
+  d {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+</style>
