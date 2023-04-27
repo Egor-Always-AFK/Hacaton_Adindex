@@ -14,17 +14,28 @@ import Layout from "../layouts/Layout.astro";
             <p class="py-6">
               Очень интересный текст, который пользователь написал о себе
             </p>
-            <div>
+            <div class="flex-row">
               <h2>Skills</h2>
               <div>
-              <img src="../../res/javascript.svg" alt="javascript" height="50px" width="50px">
-              <img src="../../res/docker.svg" alt="docker" height="50px" width="50px">
+                <img
+                  src="../../res/javascript.svg"
+                  alt="javascript"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="../../res/docker.svg"
+                  alt="docker"
+                  height="50px"
+                  width="50px"
+                />
               </div>
             </div>
-            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
-              <div class="collapse-title text-xl font-medium">
-                Образование
-              </div>
+            <div
+              tabindex="0"
+              class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">Образование</div>
               <div class="collapse-content">
                 <p>Среднее образование</p>
                 <d>*Школа_нейм*</d>
@@ -32,7 +43,10 @@ import Layout from "../layouts/Layout.astro";
                 <d>*ВУЗ_нейм*</d>
               </div>
             </div>
-            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div
+              tabindex="0"
+              class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
               <div class="collapse-title text-xl font-medium">
                 Контактные данные
               </div>
@@ -42,15 +56,13 @@ import Layout from "../layouts/Layout.astro";
                 <p>Telegram: @******</p>
               </div>
             </div>
-              </div>
-            </div>
             <div class="stats shadow">
               <div class="stat place-items-center">
                 <div class="stat-title">Рейтинг</div>
                 <div class="stat-value">31K</div>
                 <div class="stat-desc">2023</div>
               </div>
-
+    
               <div class="stat place-items-center">
                 <div class="stat-title">Активность</div>
                 <div class="stat-value text-secondary">4,200</div>
@@ -62,12 +74,13 @@ import Layout from "../layouts/Layout.astro";
             </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
 </Layout>
 
 <style>
   d {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
 </style>
